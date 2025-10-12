@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nargis Noori — Web Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Nargis Noori — Computer Science student and Web Developer from Kabul, Afghanistan." />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--muted:#94a3b8;--accent:#06b6d4;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,'Helvetica Neue',Arial;color:#e6eef8;background:linear-gradient(180deg,#07101a 0%, #071a24 100%);-webkit-font-smoothing:antialiased}
+    .container{max-width:1000px;margin:32px auto;padding:24px}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
+    .brand{display:flex;gap:14px;align-items:center}
+    .avatar{width:64px;height:64px;border-radius:12px;overflow:hidden;border:2px solid rgba(255,255,255,0.06);background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-weight:700}
+    h1{margin:0;font-size:20px}
+    p.lead{margin:0;color:var(--muted);font-size:14px}
+    nav a{color:var(--muted);text-decoration:none;margin-left:14px;font-size:14px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));border-radius:14px;padding:20px;margin-bottom:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    .hero{display:grid;grid-template-columns:1fr 320px;gap:20px;align-items:center}
+    .hero h2{margin:0 0 8px 0;font-size:28px}
+    .hero p{color:var(--muted);line-height:1.5}
+    .cta{margin-top:12px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:var(--accent);color:#042027}
+    .btn-ghost{border:1px solid rgba(255,255,255,0.06);color:var(--muted);background:transparent}
+    .profile-card{display:flex;flex-direction:column;align-items:center;gap:12px}
+    .profile-card .photo{width:220px;height:220px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:flex;align-items:center;justify-content:center;font-size:36px;font-weight:700}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px}
+    .skill{padding:6px 10px;border-radius:999px;background:var(--glass);font-size:13px;color:var(--muted);border:1px solid rgba(255,255,255,0.03)}
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+    .project{padding:14px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.01),rgba(255,255,255,0.02));border:1px solid rgba(255,255,255,0.03)}
+    .project h3{margin:0 0 6px 0}
+    .project p{margin:0;color:var(--muted);font-size:13px}
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center}
+    @media (max-width:880px){.hero{grid-template-columns:1fr}.profile-card .photo{width:160px;height:160px}}
+    .muted{color:var(--muted)}
+    .row{display:flex;gap:12px;align-items:center}
+    .label{font-size:12px;color:var(--muted)}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    .link{color:var(--accent);text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">NN</div>
+        <div>
+          <h1>Nargis Noori</h1>
+          <p class="lead">Computer Science student · Web Development Intern · Kabul, Afghanistan</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="card hero" id="about">
+      <div>
+        <h2>Hello — I’m Nargis Noori</h2>
+        <p>I am a Computer Science student from Kabul, Afghanistan. I’m currently developing my skills in web development, learning to create modern and responsive websites using HTML, CSS, and JavaScript. My goal is to use technology to empower Afghan women and inspire others to learn digital skills.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#projects">See projects</a>
+          <a class="btn btn-ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <aside class="profile-card">
+        <div class="photo">NN</div>
+        <div class="label">Location</div>
+        <div class="muted">Kabul, Afghanistan</div>
+        <div class="label">Skills</div>
+        <div class="skills">
+          <div class="skill">HTML</div>
+          <div class="skill">CSS</div>
+          <div class="skill">JavaScript</div>
+          <div class="skill">Responsive Design</div>
+          <div class="skill">Git</div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="card" id="projects">
+      <h2 style="margin-top:0">Projects about Afghan Women</h2>
+      <p class="muted">Here are some projects that focus on empowering and supporting Afghan women through technology and education.</p>
+      <div class="projects-grid">
+        <article class="project">
+          <h3>Afghan Women in Tech</h3>
+          <p>A simple website that highlights successful Afghan women in technology and encourages girls to learn coding and digital skills.</p>
+          <div style="margin-top:10px"><a class="link" href="#">View project</a></div>
+        </article>
+
+        <article class="project">
+          <h3>Education for Afghan Girls</h3>
+          <p>A web campaign design that promotes access to education and online learning opportunities for Afghan girls.</p>
+          <div style="margin-top:10px"><a class="link" href="#">View project</a></div>
+        </article>
+
+        <article class="project">
+          <h3>Voices of Afghan Women</h3>
+          <p>A storytelling platform to share inspiring stories and achievements of Afghan women across different fields.</p>
+          <div style="margin-top:10px"><a class="link" href="#">View project</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card" id="contact">
+      <h2>Contact</h2>
+      <p class="muted">You can reach me through the following contact information:</p>
+      <div class="contact-list">
+        <div class="row"><strong class="label">Email:</strong><span class="muted"> nargisnoori1@yahoo.com</span></div>
+        <div class="row"><strong class="label">GitHub:</strong><a class="link" href="#">github.com/nargisnoori</a></div>
+        <div class="row"><strong class="label">LinkedIn:</strong><a class="link" href="#">linkedin.com/in/nargisnoori</a></div>
+      </div>
+    </section>
+
+    <footer>
+      © 2025 Nargis Noori — Built with passion to inspire Afghan women in tech.
+    </footer>
+  </div>
+
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const target=document.querySelector(a.getAttribute('href'));
+        if(target){e.preventDefault();target.scrollIntoView({behavior:'smooth'});}
+      });
+    });
+  </script>
+</body>
+</html>
